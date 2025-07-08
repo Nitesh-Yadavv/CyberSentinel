@@ -3,6 +3,18 @@
 CyberSentinel is an unsupervised anomaly detection system that identifies unusual patterns in network traffic which may indicate cyberattacks or system malfunctions. It uses **Isolation Forest** and **Autoencoder neural networks** trained on the KDD Cup 1999 dataset.
 
 ---
+#  Streamlit Live Demo
+
+> Want to try it out? Visit the live app here:
+
+**🔗 [CyberSentinel Streamlit App](https://cybersentinel.streamlit.app)**  
+*(replace with your actual link after deployment)*
+
+You can upload any `.csv` file with the required features and instantly detect anomalies in your browser — no setup needed.
+- for testing you can use this `.csv` file [Download Sample CSV](./data/sample_test.csv)
+
+
+---
 
 ## Features
 
@@ -42,6 +54,7 @@ pip install -r requirements.txt
 ## How to use
 
 ### Command-Line Interface (main.py)
+
 - Run anomaly detection on any user-uploaded CSV file with the required 10 features.
 
 ### Required columns:
