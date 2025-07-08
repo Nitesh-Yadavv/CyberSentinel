@@ -1,5 +1,3 @@
-# src/isolation_forest_model.py
-
 import joblib
 import numpy as np
 
