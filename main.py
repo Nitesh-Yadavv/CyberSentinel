@@ -1,5 +1,3 @@
-# main.py
-
 import argparse
 import pandas as pd
 from src.data_preprocessing import load_scaler, preprocess_uploaded_data
@@ -16,11 +14,11 @@ def main():
     args = parser.parse_args()
 
     try:
-        print("🔄 Loading scaler and preprocessing data...")
+        print("Loading scaler and preprocessing data...")
         scaler = load_scaler()
         X = preprocess_uploaded_data(args.file, scaler)
 
-        print(f"✅ Running {args.model} model...")
+        print(f"Running {args.model} model...")
         if args.model == "isolation_forest":
             model = load_isolation_forest_model()
             preds = predict_iso(model, X)
@@ -35,13 +33,13 @@ def main():
 
         if args.output:
             output_df.to_csv(args.output, index=False)
-            print(f"💾 Predictions saved to {args.output}")
+            print(f"Predictions saved to {args.output}")
         else:
-            print("📋 Sample predictions:")
+            print("Sample predictions:")
             print(output_df.head())
 
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"Error: {e}")
 
 if __name__ == "__main__":
     main()
