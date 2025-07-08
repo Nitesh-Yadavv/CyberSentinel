@@ -8,7 +8,7 @@ CyberSentinel is an unsupervised anomaly detection system that identifies unusua
 > Want to try it out? Visit the live app here:
 
 **[CyberSentinel Streamlit App](https://cybersentinel-ecymuxdunrynbdpdfexvu4.streamlit.app)**  
-*(replace with your actual link after deployment)*
+
 
 You can upload any `.csv` file with the required features and instantly detect anomalies in your browser — no setup needed.
 - for testing you can use this `.csv` file [Download Sample CSV](./data/sample_test.csv)
